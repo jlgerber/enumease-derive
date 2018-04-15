@@ -1,6 +1,12 @@
 [package]
-name = "enumease-derive"
+name = "enumease_derive"
 version = "0.1.0"
 authors = ["jonathan gerber <jlgerber@gmail.com>"]
 
+[lib]
+proc-macro = true
+
 [dependencies]
+syn = {version = "0.13.1", features = ["extra-traits","full"]}
+quote = "0.5"
+proc-macro2 = "0.3"
